@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 set :application, "freemarket_sample_0609b"
-set :repo_url, "git@github.com:atrow/freemarket_sample_0609b.git"
+set :repo_url, "git@github.com:Tatumura/freemarket_sample_0609b.git"
 set :linked_files, %w{ config/secrets.yml }
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
@@ -11,7 +11,7 @@ set :rbenv_type, :user
 set :rbenv_ruby, '2.5.1'
 
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['~/.ssh/freemarket_sample_keypair.pem']
+                  keys: ['~/.ssh/mura2125.pem']
 
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
